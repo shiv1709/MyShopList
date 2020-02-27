@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linear_layout_popup"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/relative_layout_popup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="24dp">
+
+            <TextView
+                android:id="@+id/title"
+                android:textSize="18sp"
+                android:textStyle="italic"
+                android:text="@string/enter_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"/>
+
+            <EditText
+                android:id="@+id/itemNameToBuy"
+                android:layout_below="@+id/title"
+                android:layout_marginTop="10dp"
+                android:hint="@string/item_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/itemQuantityToBuy"
+                android:layout_below="@+id/itemNameToBuy"
+                android:layout_marginTop="10dp"
+                android:hint="@string/item_quantity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/itemBrandToBuy"
+                android:layout_below="@+id/itemQuantityToBuy"
+                android:layout_marginTop="10dp"
+                android:hint="@string/item_brand"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/itemColorToBuy"
+                android:layout_below="@+id/itemBrandToBuy"
+                android:layout_marginTop="10dp"
+                android:hint="@string/item_color"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/itemSizeToBuy"
+                android:layout_below="@+id/itemColorToBuy"
+                android:layout_marginTop="10dp"
+                android:hint="@string/item_size"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <Button
+                android:id="@+id/save_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/itemSizeToBuy"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:background="@color/colorPrimary"
+                android:text="@string/save_item"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
